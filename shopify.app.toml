@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "Final_ruff"
+client_id = "32404a97e865670d77c4a66d373c1d0f"
+application_url = "https://301e-180-151-48-154.ngrok-free.app"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = ""
+
+[auth]
+redirect_urls = [
+  "https://301e-180-151-48-154.ngrok-free.app/auth/callback",
+  "https://301e-180-151-48-154.ngrok-free.app/auth/shopify/callback",
+  "https://301e-180-151-48-154.ngrok-free.app/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "ruffgreens-subscription-protoapp.myshopify.com"
